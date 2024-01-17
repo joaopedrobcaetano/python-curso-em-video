@@ -2,5 +2,5 @@ import math
 
 catOposto = float(input('Digite o cateto oposto: '))
 catAdjacente = float(input('Digite o cateto adjacente: '))
-hipotenusa = math.sqrt((catOposto * catOposto) + (catAdjacente * catAdjacente))
-print('Valor da hipotenusa: {}'.format(hipotenusa))
+hipotenusa = math.hypot(catOposto, catAdjacente)
+print('Valor da hipotenusa: {:.2f}'.format(hipotenusa))
